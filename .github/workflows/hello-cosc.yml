@@ -14,4 +14,4 @@ jobs:
           echo "✨ Status: COSC is officially watching this adventure evolve."
           
       - name: Random Fun Fact
-        run: curl -sL -H "Accept: application/json" https://uselessfacts.jsph.pl/api/v2/facts/random | jq -r '.text'
+        run: 'curl -sL -H "Accept: application/json" https://uselessfacts.jsph.pl/api/v2/facts/random | jq -r ".text"'
